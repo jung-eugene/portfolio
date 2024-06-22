@@ -1,0 +1,39 @@
+.navbar {
+  color: rgb(148, 148, 148);
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+  background-color: rgb(13, 17, 23);
+}
+.navbar ul {
+  background-color: rgb(1, 4, 9);
+  display: flex;
+  border: 0.5px solid #454545;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.navbar li {
+  border-right: 0.5px solid #454545;
+  padding: 0.5rem 1rem;
+  list-style: none;
+  cursor: pointer;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.active {
+  border-top: 2px solid rgb(191, 97, 106) !important;
+  background-color: rgb(13, 17, 23);
+  border-bottom: none;
+  color: rgb(221, 147, 45);
+}
+
+@media screen and (max-width: 400px) {
+  .navbar li {
+    width: 100%;
+    font-size: 14px;
+  }
+}
