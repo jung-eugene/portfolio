@@ -13,7 +13,7 @@ const projects = [
     commits: "4,245 commits",
   },
   {
-    title: "Project 2",
+    title: "ai-photo",
     description: [
       "Lorem ipsum dolor sit amet,",
       "consectetur adipiscing elit, sed do",
@@ -23,7 +23,7 @@ const projects = [
     commits: "245 commits",
   },
   {
-    title: "Project 3",
+    title: "bostonhacks-medimind",
     description: [
       "Lorem ipsum dolor sit amet,",
       "consectetur adipiscing elit, sed do",
@@ -33,7 +33,7 @@ const projects = [
     commits: "245 commits",
   },
   {
-    title: "Project 4",
+    title: "bu-website",
     description: [
       "Lorem ipsum dolor sit amet,",
       "consectetur adipiscing elit, sed do",

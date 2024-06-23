@@ -6,6 +6,8 @@
   background-color: transparent;
   height: calc(100vh - 110px);
   overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #cf9b31 #1e1e1e;
 }
 
 .heading {
@@ -69,7 +71,7 @@
   flex-grow: 1;
   margin-bottom: 1rem; /* Add margin-bottom */
   font-size: 0.9rem;
-  color: #d1d1d1;
+  color: #4b5058;
   background-color: #0a0d12;
 }
 
@@ -99,7 +101,7 @@
 }
 
 .description {
-  color: #d1d1d1;
+  color: #757c84;
   margin-top: 1rem;
 }
 
