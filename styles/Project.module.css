@@ -1,10 +1,11 @@
 .container {
   padding: 2rem;
-  max-width: 1200px;
+  width: 70%;
   margin: 0 auto;
   color: #d1d1d1;
   background-color: transparent;
   height: calc(100vh - 110px);
+  overflow: auto;
 }
 
 .heading {
@@ -17,8 +18,9 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 2rem;
+  flex-grow: 1;
 }
 
 .card {
@@ -80,11 +82,16 @@
 .button {
   background-color: #cf9b31;
   color: #1e1e1e;
-  padding: 0.5rem 1rem;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-align: left;
+  width: 100%;
+  margin-top: 1.5rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  width: calc(100% + 2rem); /* Adjust the width to fill the space */
+  padding-left: 1rem; /* Align text with code */
 }
 
 .button:hover {
@@ -98,16 +105,18 @@
 
 .githubButton {
   background-color: transparent;
-  color: #3498db;
+  color: #648d9a;
   border: 1px solid rgb(37, 44, 54);
   padding: 0.5rem 1rem;
-  border-radius: 5px;
+  border-radius: 20px;
+  width: 30%;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
-  margin-top: 1rem;
+  margin-top: 3rem;
+  text-align: center;
 }
 
 .githubButton:hover {
-  background-color: #3498db; /* Blue background on hover */
-  color: #ffffff; /* White text color on hover */
+  background-color: #648d9a;
+  color: #ffffff;
 }

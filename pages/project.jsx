@@ -3,27 +3,43 @@ import styles from "../styles/Project.module.css";
 
 const projects = [
   {
-    title: "Project 1",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "apple-website",
+    description: [
+      "Lorem ipsum dolor sit amet,",
+      "consectetur adipiscing elit, sed do",
+      "eiusmod tempor incididunt ut labore",
+      "et dolore magna aliqua.",
+    ],
     commits: "4,245 commits",
   },
   {
     title: "Project 2",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: [
+      "Lorem ipsum dolor sit amet,",
+      "consectetur adipiscing elit, sed do",
+      "eiusmod tempor incididunt ut labore",
+      "et dolore magna aliqua.",
+    ],
     commits: "245 commits",
   },
   {
     title: "Project 3",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: [
+      "Lorem ipsum dolor sit amet,",
+      "consectetur adipiscing elit, sed do",
+      "eiusmod tempor incididunt ut labore",
+      "et dolore magna aliqua.",
+    ],
     commits: "245 commits",
   },
   {
     title: "Project 4",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: [
+      "Lorem ipsum dolor sit amet,",
+      "consectetur adipiscing elit, sed do",
+      "eiusmod tempor incididunt ut labore",
+      "et dolore magna aliqua.",
+    ],
     commits: "245 commits",
   },
 ];
@@ -42,13 +58,22 @@ const Project = () => {
             <div className={styles.codeBlock}>
               <pre>
                 <code>
-                  {`/**\n * ${project.title}\n * ${project.description}\n */`}
+                  {`/**\n`}
+                  {project.description.map((line) => ` * ${line}\n`).join("")}
+                  {` */`}
                 </code>
               </pre>
-              <button className={styles.button}>see the project</button>
+              <button className={styles.button}>view live project</button>
             </div>
             <div className={styles.description}>{project.description}</div>
-            <button className={styles.githubButton}>view GitHub</button>
+            <a
+              href={`https://github.com/jung-eugene/${project.title}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.githubButton}
+            >
+              View GitHub
+            </a>
           </div>
         ))}
       </div>
