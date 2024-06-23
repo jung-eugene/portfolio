@@ -4,6 +4,7 @@
   margin: 0 auto;
   color: #d1d1d1;
   background-color: transparent;
+  height: calc(100vh - 110px);
 }
 
 .heading {

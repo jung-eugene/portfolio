@@ -3,27 +3,31 @@
   color: rgb(148, 148, 148);
   display: flex;
   justify-content: space-between;
-  padding-right: 1rem;
   align-items: center;
-  border-top: 1px solid rgba(139, 148, 158, 0.2);
+  border-top: 1px solid rgb(37, 44, 54);
   height: 50px;
+  padding-right: 1rem;
 }
+
 .footer div {
   display: flex;
   font-size: 1.1rem;
   align-items: center;
 }
+
 .footer p {
-  border-right: 1px solid rgba(139, 148, 158, 0.2);
+  border-right: 1px solid rgb(37, 44, 54);
   font-size: 1.1rem;
   padding: 5px 10px;
 }
+
 .footer span {
-  border-right: 1px solid rgba(139, 148, 158, 0.2);
+  border-right: 1px solid rgb(37, 44, 54);
   padding: 5px 10px;
   display: flex;
   align-items: center;
 }
+
 @media screen and (max-width: 425px) {
   .footer div {
     font-size: 1.1rem;
