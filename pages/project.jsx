@@ -4,43 +4,51 @@ import styles from "../styles/Project.module.css";
 const projects = [
   {
     title: "apple-website",
-    description: [
-      "Lorem ipsum dolor sit amet,",
-      "consectetur adipiscing elit, sed do",
-      "eiusmod tempor incididunt ut labore",
-      "et dolore magna aliqua.",
+    codeBlockContent: [
+      "Apple's iPhone 15 Pro website",
+      "dynamic 3D model rendering",
+      "smooth animations using GSAP",
+      "fully responsive",
     ],
-    commits: "4,245 commits",
+    description:
+      "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects. Features custom animations, 3D model rendering, and a fully responsive design that adapts to different screen sizes.",
+    commits: "27 commits",
   },
   {
     title: "ai-photo",
-    description: [
-      "Lorem ipsum dolor sit amet,",
-      "consectetur adipiscing elit, sed do",
-      "eiusmod tempor incididunt ut labore",
-      "et dolore magna aliqua.",
+    codeBlockContent: [
+      "AI image generation app",
+      "MERN stack",
+      "Cloudinary for image storage",
+      "responsive design with Tailwind CSS",
     ],
-    commits: "245 commits",
+    description:
+      "An AI Photo Generator that turns text descriptions into images using OpenAI's DALL-E. Utilized the MERN stack for full-stack development, Tailwind CSS for responsive design, and Cloudinary for cloud-based image storage.",
+    commits: "33 commits",
   },
   {
     title: "bostonhacks-medimind",
-    description: [
-      "Lorem ipsum dolor sit amet,",
-      "consectetur adipiscing elit, sed do",
-      "eiusmod tempor incididunt ut labore",
-      "et dolore magna aliqua.",
+    codeBlockContent: [
+      "fitness and diet mobile app",
+      "React Native and OpenAI",
+      "health metric monitor",
+      "AI-powered symptom checker",
     ],
-    commits: "245 commits",
+    description:
+      "A mental health tracking mobile app developed for the BostonHacks hackathon. Designed for individuals with medical conditions, allowing them to monitor their health metrics and receive AI diet recommendations.",
+    commits: "72 commits",
   },
   {
     title: "bu-website",
-    description: [
-      "Lorem ipsum dolor sit amet,",
-      "consectetur adipiscing elit, sed do",
-      "eiusmod tempor incididunt ut labore",
-      "et dolore magna aliqua.",
+    codeBlockContent: [
+      "simplified version of the BU website",
+      "introduces the university",
+      "HTML, CSS, and Javascript",
+      "fully responsive",
     ],
-    commits: "245 commits",
+    description:
+      "A website designed to introduce Boston University, built using HTML, CSS, and Javascript. Includes a contact form and various pages such as About, Programs, and Blog. Fully responsive design.",
+    commits: "7 commits",
   },
 ];
 
@@ -59,11 +67,15 @@ const Project = () => {
               <pre>
                 <code>
                   {`/**\n`}
-                  {project.description.map((line) => ` * ${line}\n`).join("")}
+                  {project.codeBlockContent
+                    .map((line) => ` * ${line}\n`)
+                    .join("")}
                   {` */`}
                 </code>
               </pre>
-              <button className={styles.button}>view live project</button>
+              <button className={styles.button}>
+                view live project &gt;&gt;{" "}
+              </button>
             </div>
             <div className={styles.description}>{project.description}</div>
             <a
