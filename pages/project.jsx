@@ -45,8 +45,10 @@ const Project = () => {
                   {`/**\n * ${project.title}\n * ${project.description}\n */`}
                 </code>
               </pre>
+              <button className={styles.button}>see the project</button>
             </div>
-            <button className={styles.button}>see the project</button>
+            <div className={styles.description}>{project.description}</div>
+            <button className={styles.githubButton}>view GitHub</button>
           </div>
         ))}
       </div>

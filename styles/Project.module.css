@@ -46,7 +46,6 @@
 
 .title,
 .commits,
-.codeBlock,
 .button {
   font-size: 1rem;
   font-weight: normal;
@@ -63,15 +62,19 @@
 .codeBlock {
   padding: 1rem;
   border-radius: 8px;
-  overflow-x: auto;
-  margin-bottom: 1rem;
-  font-size: 1rem;
+  white-space: pre-wrap; /* Preserve whitespace and wrap as needed */
+  word-break: break-word; /* Ensure long words break correctly */
+  flex-grow: 1;
+  margin-bottom: 1rem; /* Add margin-bottom */
+  font-size: 0.9rem;
   color: #d1d1d1;
-  background-color: transparent;
+  background-color: #0a0d12;
 }
 
 .codeBlock pre {
   margin: 0;
+  white-space: pre-wrap; /* Ensure pre element wraps */
+  word-break: break-word; /* Ensure long words break correctly */
 }
 
 .button {
@@ -86,4 +89,25 @@
 
 .button:hover {
   background-color: #ffaa00;
+}
+
+.description {
+  color: #d1d1d1;
+  margin-top: 1rem;
+}
+
+.githubButton {
+  background-color: transparent;
+  color: #3498db;
+  border: 1px solid rgb(37, 44, 54);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.githubButton:hover {
+  background-color: #3498db; /* Blue background on hover */
+  color: #ffffff; /* White text color on hover */
 }
