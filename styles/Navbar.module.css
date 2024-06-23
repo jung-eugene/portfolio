@@ -8,13 +8,13 @@
 .navbar ul {
   background-color: rgb(1, 4, 9);
   display: flex;
-  border: 0.5px solid #454545;
+  border: 0.5px solid rgb(37, 44, 54);
   width: 100%;
   padding: 0;
   margin: 0;
 }
 .navbar li {
-  border-right: 0.5px solid #454545;
+  border-right: 0.5px solid rgb(37, 44, 54);
   padding: 0.5rem 1rem;
   list-style: none;
   cursor: pointer;
@@ -25,10 +25,10 @@
   position: relative;
 }
 .active {
-  border-top: 2px solid rgb(191, 97, 106) !important;
+  border-top: 3px solid rgb(191, 97, 106) !important;
   background-color: rgb(13, 17, 23);
   border-bottom: none;
-  color: rgb(221, 147, 45);
+  color: #cf9b31;
 }
 
 @media screen and (max-width: 400px) {

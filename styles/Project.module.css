@@ -4,24 +4,25 @@
   margin: 0 auto;
   color: #d1d1d1;
   background-color: transparent;
-  font-family: "Fira Code", monospace;
 }
 
 .heading {
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-bottom: 2rem;
+  padding-top: 2rem;
+  font-weight: normal;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
   gap: 2rem;
 }
 
 .card {
   padding: 1.5rem;
-  border: 1px solid #ffd700;
+  border: 0.5px solid rgb(37, 44, 54);
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
@@ -47,14 +48,15 @@
 .codeBlock,
 .button {
   font-size: 1rem;
+  font-weight: normal;
 }
 
 .title {
-  color: #ffd700;
+  color: #cf9b31;
 }
 
 .commits {
-  color: #d1d1d1;
+  color: #2f3743;
 }
 
 .codeBlock {
@@ -72,7 +74,7 @@
 }
 
 .button {
-  background-color: #ffd700;
+  background-color: #cf9b31;
   color: #1e1e1e;
   padding: 0.5rem 1rem;
   border: none;
@@ -82,5 +84,5 @@
 }
 
 .button:hover {
-  background-color: #ffbb00;
+  background-color: #ffaa00;
 }
