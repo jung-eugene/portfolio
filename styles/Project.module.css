@@ -122,3 +122,30 @@
   background-color: #648d9a;
   color: #ffffff;
 }
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .codeBlock {
+    height: auto; /* Allow code block to expand */
+    padding-bottom: 2.5rem; /* Ensure space for the button */
+  }
+
+  .button {
+    position: static; /* Remove absolute positioning */
+    width: calc(100% + 2rem); /* Ensure button spans full width */
+    margin: 0 -1rem; /* Remove button padding */
+  }
+
+  .githubButton {
+    text-align: center;
+    width: 100%;
+  }
+}
