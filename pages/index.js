@@ -101,13 +101,15 @@ export default function Home() {
               <motion.div
                 className={styles.input}
                 whileHover={{
-                  scale: [1, 1.4, 1.2],
+                  scale: 1.2,
+                  x: 10, // Move 10px to the right
+                  y: 10, // Move 10px to the bottom
                   transition: {
                     duration: 0.2,
                   },
                 }}
               >
-                <p>&#x276F;</p>
+                <p>&gt;</p>
                 <input
                   type="text"
                   placeholder="whois"

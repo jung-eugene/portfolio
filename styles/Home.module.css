@@ -34,6 +34,7 @@
   color: rgb(121, 192, 255);
   letter-spacing: 1px;
   font-style: italic;
+  margin-top: 5px;
 }
 
 .left_col_bottom p {
@@ -44,11 +45,12 @@
 .left_col_bottom .input {
   display: flex;
   align-items: center;
+  font-size: 24px;
 }
 
 .left_col_bottom .input p {
   color: rgb(199, 160, 242);
-  font-size: 16px;
+  font-size: 28px;
 }
 
 .left_col_bottom .input input {
