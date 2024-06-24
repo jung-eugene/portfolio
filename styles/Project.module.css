@@ -20,7 +20,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   flex-grow: 1;
 }
@@ -123,9 +123,10 @@
   color: #ffffff;
 }
 
-@media screen and (max-width: 768px) {
+/* For tablets and phones */
+@media screen and (max-width: 1024px) {
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
 
@@ -135,7 +136,6 @@
 
   .codeBlock {
     height: auto; /* Allow code block to expand */
-    padding-bottom: 2.5rem; /* Ensure space for the button */
   }
 
   .button {
