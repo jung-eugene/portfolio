@@ -72,9 +72,10 @@
 
 .about .right {
   background-color: rgb(1, 4, 9);
-  height: calc(100vh - 110px);
+  height: calc(100vh - 90px);
   padding: 1rem;
   width: 400px;
+  margin-bottom: 20px;
 }
 
 .about .right_container h3 {
@@ -105,7 +106,7 @@
 
 .about .skill_menu {
   position: absolute;
-  right: 1rem;
+  right: 24px;
   top: 0;
   font-size: 2rem;
   cursor: pointer;
