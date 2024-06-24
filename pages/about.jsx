@@ -10,10 +10,10 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 const About = () => {
-  const [showReact, setShowReact] = useState(true);
-  const [showNext, setShowNext] = useState(false);
-  const [showHtml, setShowHtml] = useState(false);
+  const [showLanguage, setShowLanguage] = useState(true);
+  const [showFramework, setShowFramework] = useState(false);
   const [showLibrary, setShowLibrary] = useState(false);
+  const [showTool, setShowTool] = useState(false);
   const [showFree, setShowFree] = useState(false);
   const [showMenu, setShowMenu] = useState(true);
   return (
@@ -139,11 +139,11 @@ const About = () => {
             <div className={style.right_interest}>
               <div className={style.skill}>
                 <div
-                  onClick={(e) => setShowReact(!showReact)}
+                  onClick={(e) => setShowLanguage(!showLanguage)}
                   className={style.dropdownSkill}
                 >
                   <span>
-                    {showReact ? <FiChevronDown /> : <FiChevronRight />}
+                    {showLanguage ? <FiChevronDown /> : <FiChevronRight />}
                   </span>
                   <span style={{ color: "rgb(235,203,139)" }}>
                     <BsFolderFill />
@@ -151,7 +151,7 @@ const About = () => {
                   <span> languages </span>
                 </div>
                 <AnimatePresence>
-                  {showReact && (
+                  {showLanguage && (
                     <motion.div
                       className={style.showSkill}
                       initial="hidden"
@@ -203,11 +203,11 @@ const About = () => {
               </div>
               <div className={style.skill}>
                 <div
-                  onClick={(e) => setShowNext(!showNext)}
+                  onClick={(e) => setShowFramework(!showFramework)}
                   className={style.dropdownSkill}
                 >
                   <span>
-                    {showNext ? <FiChevronDown /> : <FiChevronRight />}
+                    {showFramework ? <FiChevronDown /> : <FiChevronRight />}
                   </span>
                   <span style={{ color: "rgb(136,192,208)" }}>
                     <BsFolderFill />
@@ -215,7 +215,7 @@ const About = () => {
                   <span> frameworks </span>
                 </div>
                 <AnimatePresence>
-                  {showNext && (
+                  {showFramework && (
                     <motion.div
                       className={style.showSkill}
                       initial="hidden"
@@ -264,11 +264,11 @@ const About = () => {
               </div>
               <div className={style.skill}>
                 <div
-                  onClick={(e) => setShowLibrary(!showLibrary)}
+                  onClick={(e) => setShowTool(!showTool)}
                   className={style.dropdownSkill}
                 >
                   <span>
-                    {showLibrary ? <FiChevronDown /> : <FiChevronRight />}
+                    {showTool ? <FiChevronDown /> : <FiChevronRight />}
                   </span>
                   <span style={{ color: "rgb(191,97,106)" }}>
                     <BsFolderFill />
@@ -276,7 +276,7 @@ const About = () => {
                   <span> libraries </span>
                 </div>
                 <AnimatePresence>
-                  {showLibrary && (
+                  {showTool && (
                     <motion.div
                       className={style.showSkill}
                       initial="hidden"
@@ -322,11 +322,11 @@ const About = () => {
               </div>
               <div className={style.skill}>
                 <div
-                  onClick={(e) => setShowHtml(!showHtml)}
+                  onClick={(e) => setShowLibrary(!showLibrary)}
                   className={style.dropdownSkill}
                 >
                   <span>
-                    {showHtml ? <FiChevronDown /> : <FiChevronRight />}
+                    {showLibrary ? <FiChevronDown /> : <FiChevronRight />}
                   </span>
                   <span style={{ color: "rgb(163,190,140)" }}>
                     <BsFolderFill />
@@ -334,7 +334,7 @@ const About = () => {
                   <span> tools </span>
                 </div>
                 <AnimatePresence>
-                  {showHtml && (
+                  {showLibrary && (
                     <motion.div
                       className={style.showSkill}
                       initial="hidden"
@@ -430,10 +430,10 @@ const About = () => {
                         <BsMarkdownFill /> building side projects.md
                       </p>
                       <p>
-                        <BsMarkdownFill /> traveling the world.md
+                        <BsMarkdownFill /> traveling.md
                       </p>
                       <p>
-                        <BsMarkdownFill /> watching k-dramas.md
+                        <BsMarkdownFill /> watching netflix.md
                       </p>
                       <p>
                         <BsMarkdownFill /> listening to indie rock.md

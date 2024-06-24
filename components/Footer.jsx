@@ -21,7 +21,7 @@ const Footer = () => {
   return (
     <div className={style.footer}>
       <div>
-        <p className={style.find}>find me in:</p>
+        <p className={style.find}>find me:</p>
         <a
           href="https://www.linkedin.com/in/eugene-jung/"
           target="_blank"
