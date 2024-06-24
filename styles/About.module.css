@@ -1,7 +1,7 @@
 .about {
   background-color: rgb(13, 17, 23);
   height: calc(100vh - 110px);
-  color: whitesmoke;
+  color: #a3a7ad;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,6 +21,7 @@
   flex-direction: column;
   font-size: 16px;
 }
+
 .about .left_line {
   width: 1px;
   height: 400px;
@@ -32,6 +33,7 @@
     rgba(0, 0, 0, 0)
   );
 }
+
 .about .left_line2 {
   width: 1px;
   height: 180px;
@@ -39,12 +41,15 @@
   margin-left: 1rem;
   background-color: rgba(226, 226, 226, 0.185);
 }
+
 .text_fade_01 {
   opacity: 0.1;
 }
+
 .text_fade_02 {
   opacity: 0.3;
 }
+
 .text_fade_03 {
   opacity: 0.6;
 }
@@ -56,42 +61,48 @@
   margin-left: 14px;
   color: rgb(151, 153, 163);
 }
+
 .about .left_about span {
   font-size: 18px;
 }
+
 .about .ml_2 {
   margin-left: -15px;
 }
+
 .about .right {
   background-color: rgb(1, 4, 9);
   height: calc(100vh - 110px);
   padding: 1rem;
   width: 400px;
 }
+
 .about .right_container h3 {
-  font-weight: bold;
-  margin-left: 15px;
+  font-weight: normal;
+  margin-left: 20px;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 18px;
 }
+
 .about .right .skill {
   margin-top: 5px;
   display: flex;
   flex-direction: column;
-}
-.about .right .skill {
   font-size: 18px;
 }
+
 .about .right .skill .dropdownSkill {
   display: flex;
   gap: 4px;
   cursor: pointer;
   width: fit-content;
 }
+
 .about .right .showSkill {
   margin-left: 30px;
   color: rgb(129, 161, 193);
 }
+
 .about .skill_menu {
   position: absolute;
   right: 1rem;
@@ -111,6 +122,7 @@
     width: 320px;
   }
 }
+
 @media screen and (max-width: 850px) {
   .about .right {
     display: none;
@@ -123,13 +135,13 @@
     opacity: 1;
   }
   .about .right_container h3 {
-    font-weight: bold;
-    font-size: 20px;
+    font-size: 14px;
   }
   .about .right .skill {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
+
 @media screen and (max-width: 510px) {
   .about .left {
     height: 400px;

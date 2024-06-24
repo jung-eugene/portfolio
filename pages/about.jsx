@@ -135,7 +135,7 @@ const About = () => {
           }}
         >
           <div className={style.right_container}>
-            <h3>my interests</h3>
+            <h3>MY INTERESTS</h3>
             <div className={style.right_interest}>
               <div className={style.skill}>
                 <div
@@ -145,7 +145,9 @@ const About = () => {
                   <span>
                     {showLanguage ? <FiChevronDown /> : <FiChevronRight />}
                   </span>
-                  <span style={{ color: "rgb(235,203,139)" }}>
+                  <span
+                    style={{ color: "rgb(235,203,139)", marginRight: "3px" }}
+                  >
                     <BsFolderFill />
                   </span>
                   <span> languages </span>
@@ -209,7 +211,9 @@ const About = () => {
                   <span>
                     {showFramework ? <FiChevronDown /> : <FiChevronRight />}
                   </span>
-                  <span style={{ color: "rgb(136,192,208)" }}>
+                  <span
+                    style={{ color: "rgb(136,192,208)", marginRight: "3px" }}
+                  >
                     <BsFolderFill />
                   </span>
                   <span> frameworks </span>
@@ -270,7 +274,9 @@ const About = () => {
                   <span>
                     {showTool ? <FiChevronDown /> : <FiChevronRight />}
                   </span>
-                  <span style={{ color: "rgb(191,97,106)" }}>
+                  <span
+                    style={{ color: "rgb(191,97,106)", marginRight: "3px" }}
+                  >
                     <BsFolderFill />
                   </span>
                   <span> libraries </span>
@@ -328,7 +334,9 @@ const About = () => {
                   <span>
                     {showLibrary ? <FiChevronDown /> : <FiChevronRight />}
                   </span>
-                  <span style={{ color: "rgb(163,190,140)" }}>
+                  <span
+                    style={{ color: "rgb(163,190,140)", marginRight: "3px" }}
+                  >
                     <BsFolderFill />
                   </span>
                   <span> tools </span>
@@ -389,7 +397,7 @@ const About = () => {
                   <span>
                     {showFree ? <FiChevronDown /> : <FiChevronRight />}
                   </span>
-                  <span style={{ color: "whitesmoke" }}>
+                  <span style={{ color: "whitesmoke", marginRight: "3px" }}>
                     <BsFolderFill />
                   </span>
                   <span> free time </span>
@@ -428,9 +436,6 @@ const About = () => {
                     >
                       <p>
                         <BsMarkdownFill /> building side projects.md
-                      </p>
-                      <p>
-                        <BsMarkdownFill /> traveling.md
                       </p>
                       <p>
                         <BsMarkdownFill /> watching netflix.md
