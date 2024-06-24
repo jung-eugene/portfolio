@@ -1,5 +1,5 @@
-import React from "react";
 import styles from "../styles/Project.module.css";
+import HelmetMetaData from "../components/HelmetMetaData";
 
 const projects = [
   {
@@ -11,7 +11,7 @@ const projects = [
       "fully responsive",
     ],
     description:
-      "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects. Features custom animations, 3D model rendering, and a fully responsive design that adapts to different screen sizes.",
+      "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects. Features custom animations, 3D model rendering, and a fully responsive design.",
     commits: "27 commits",
   },
   {
@@ -23,7 +23,7 @@ const projects = [
       "responsive design with Tailwind CSS",
     ],
     description:
-      "An AI Photo Generator that turns text descriptions into images using OpenAI's DALL-E. Utilized the MERN stack for full-stack development, Tailwind CSS for responsive design, and Cloudinary for cloud-based image storage.",
+      "An AI Photo Generator that turns text descriptions into images using OpenAI's DALL-E. Utilized the MERN stack for full-stack development, and Cloudinary for cloud-based image storage.",
     commits: "33 commits",
   },
   {
@@ -35,7 +35,7 @@ const projects = [
       "AI-powered symptom checker",
     ],
     description:
-      "A mental health tracking mobile app developed for the BostonHacks hackathon. Designed for individuals with medical conditions, allowing them to monitor their health metrics and receive AI diet recommendations.",
+      "A mental health tracking mobile app developed for BostonHacks. Designed for individuals with medical conditions to monitor their health metrics and receive AI diet recommendations.",
     commits: "72 commits",
   },
   {
@@ -47,7 +47,7 @@ const projects = [
       "fully responsive",
     ],
     description:
-      "A website designed to introduce Boston University, built using HTML, CSS, and Javascript. Includes a contact form and various pages such as About, Programs, and Blog. Fully responsive design.",
+      "A simple website designed to introduce Boston University, built using HTML, CSS, and Javascript. Includes a contact form and various pages such as About, Programs, and Blog. Fully responsive design.",
     commits: "7 commits",
   },
 ];
@@ -55,6 +55,7 @@ const projects = [
 const Project = () => {
   return (
     <div className={styles.container}>
+      <HelmetMetaData />
       <h2 className={styles.heading}>// Top projects</h2>
       <div className={styles.grid}>
         {projects.map((project, index) => (

@@ -1,5 +1,7 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import style from "../styles/About.module.css";
+import HelmetMetaData from "../components/HelmetMetaData";
+
 import { BsFolderFill, BsMarkdownFill } from "react-icons/bs";
 import { FiChevronRight, FiChevronDown } from "react-icons/fi";
 import { HiOutlineMenu } from "react-icons/hi";
@@ -16,6 +18,7 @@ const About = () => {
   const [showMenu, setShowMenu] = useState(true);
   return (
     <div className={style.about}>
+      <HelmetMetaData />
       <div className={style.skill_menu} onClick={(e) => setShowMenu(!showMenu)}>
         {" "}
         {showMenu ? <AiOutlineClose /> : <HiOutlineMenu />}
