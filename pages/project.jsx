@@ -1,5 +1,6 @@
 import styles from "../styles/Project.module.css";
 import HelmetMetaData from "../components/HelmetMetaData";
+import { motion } from "framer-motion";
 
 const projects = [
   {
@@ -52,6 +53,17 @@ const projects = [
   },
 ];
 
+// Card animation
+const cardVariants = {
+  hidden: { opacity: 0, y: 50, scale: 0.8 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 2, ease: "easeInOut" },
+  },
+};
+
 const Project = () => {
   return (
     <div className={styles.container}>
@@ -59,35 +71,43 @@ const Project = () => {
       <h2 className={styles.heading}>// Top projects</h2>
       <div className={styles.grid}>
         {projects.map((project, index) => (
-          <div key={index} className={styles.card}>
-            <div className={styles.cardHeader}>
-              <h3 className={styles.title}>{project.title}</h3>
-              <span className={styles.commits}>{project.commits}</span>
+          <motion.div
+            key={index}
+            initial="hidden"
+            animate="visible"
+            variants={cardVariants}
+            style={{ marginBottom: "20px" }}
+          >
+            <div key={index} className={styles.card}>
+              <div className={styles.cardHeader}>
+                <h3 className={styles.title}>{project.title}</h3>
+                <span className={styles.commits}>{project.commits}</span>
+              </div>
+              <div className={styles.codeBlock}>
+                <pre>
+                  <code>
+                    {`/**\n`}
+                    {project.codeBlockContent
+                      .map((line) => ` * ${line}\n`)
+                      .join("")}
+                    {` */`}
+                  </code>
+                </pre>
+                <button className={styles.button}>
+                  view live project &gt;&gt;{" "}
+                </button>
+              </div>
+              <div className={styles.description}>{project.description}</div>
+              <a
+                href={`https://github.com/jung-eugene/${project.title}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.githubButton}
+              >
+                View GitHub
+              </a>
             </div>
-            <div className={styles.codeBlock}>
-              <pre>
-                <code>
-                  {`/**\n`}
-                  {project.codeBlockContent
-                    .map((line) => ` * ${line}\n`)
-                    .join("")}
-                  {` */`}
-                </code>
-              </pre>
-              <button className={styles.button}>
-                view live project &gt;&gt;{" "}
-              </button>
-            </div>
-            <div className={styles.description}>{project.description}</div>
-            <a
-              href={`https://github.com/jung-eugene/${project.title}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.githubButton}
-            >
-              View GitHub
-            </a>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
