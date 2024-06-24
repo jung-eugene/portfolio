@@ -102,8 +102,8 @@ export default function Home() {
                 className={styles.input}
                 whileHover={{
                   scale: 1.2,
-                  x: 10, // Move 10px to the right
-                  y: 10, // Move 10px to the bottom
+                  x: 40,
+                  y: 10,
                   transition: {
                     duration: 0.2,
                   },

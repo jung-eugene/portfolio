@@ -72,10 +72,10 @@
 
 .about .right {
   background-color: rgb(1, 4, 9);
-  height: calc(100vh - 90px);
+  height: calc(100vh - 95px);
   padding: 1rem;
   width: 400px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .about .right_container h3 {
