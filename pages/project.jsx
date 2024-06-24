@@ -14,6 +14,7 @@ const projects = [
     description:
       "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects. Features custom animations, 3D model rendering, and a fully responsive design.",
     commits: "27 commits",
+    liveProjectLink: "https://3d-iphone15.vercel.app/",
   },
   {
     title: "ai-photo",
@@ -26,6 +27,7 @@ const projects = [
     description:
       "An AI Photo Generator that turns text descriptions into images using OpenAI's DALL-E. Utilized the MERN stack for full-stack development, and Cloudinary for cloud-based image storage.",
     commits: "33 commits",
+    liveProjectLink: "https://github.com/jung-eugene/ai-photo",
   },
   {
     title: "bostonhacks-medimind",
@@ -38,6 +40,7 @@ const projects = [
     description:
       "A mental health tracking mobile app developed for BostonHacks. Designed for individuals with medical conditions to monitor their health metrics and receive AI diet recommendations.",
     commits: "72 commits",
+    liveProjectLink: "https://github.com/jung-eugene/bostonhacks-medimind",
   },
   {
     title: "bu-website",
@@ -50,6 +53,7 @@ const projects = [
     description:
       "A simple website designed to introduce Boston University, built using HTML, CSS, and Javascript. Includes a contact form and various pages such as About, Programs, and Blog. Fully responsive design.",
     commits: "7 commits",
+    liveProjectLink: "https://jung-eugene.github.io/bu-website/",
   },
 ];
 
@@ -93,9 +97,14 @@ const Project = () => {
                     {` */`}
                   </code>
                 </pre>
-                <button className={styles.button}>
+                <a
+                  href={project.liveProjectLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.button}
+                >
                   view live project &gt;&gt;{" "}
-                </button>
+                </a>
               </div>
               <div className={styles.description}>{project.description}</div>
               <a

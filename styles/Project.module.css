@@ -82,6 +82,7 @@
 }
 
 .button {
+  display: block;
   background-color: #cf9b31;
   color: #1e1e1e;
   border: none;
