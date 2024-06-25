@@ -74,7 +74,7 @@
 /* Adjust size for mobile screens */
 @media screen and (max-width: 768px) {
   .container {
-    width: 80%;
+    width: 90%;
     margin: auto;
   }
 
@@ -101,6 +101,7 @@
 
   .left_col_bottom p {
     font-size: 14px;
+    letter-spacing: 0.5px;
   }
 
   .left_col_bottom .input p {
@@ -109,5 +110,9 @@
 
   .left_col_bottom .input input {
     font-size: 14px;
+  }
+
+  .canvasEl {
+    width: 100%; /* Ensure model scales properly on mobile */
   }
 }
