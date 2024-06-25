@@ -1,16 +1,16 @@
 <div align="center">
-    <p float="left">
-    <img height="200" alt="home" src="https://github.com/jung-eugene/portfolio/assets/114817519/6b660732-53f0-4a3e-ad1b-87b1c2631ef0">
-    <img height="200" alt="about" src="https://github.com/jung-eugene/portfolio/assets/114817519/90927221-a09e-43f7-82c7-69bb56c8f517">
-    </p>
+<p float="left">
+<img height="200" alt="home" src="https://github.com/jung-eugene/portfolio/assets/114817519/6b660732-53f0-4a3e-ad1b-87b1c2631ef0">
+<img height="200" alt="about" src="https://github.com/jung-eugene/portfolio/assets/114817519/90927221-a09e-43f7-82c7-69bb56c8f517">
+</p>
 
-    ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
-    ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-    ![Threejs](https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white)
-    ![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
-    ![Framer](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Threejs](https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white)
+![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
+![Framer](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue)
 
-    <h3 align="center">Personal Portfolio 💻</h3>
+<h3 align="center">Personal Portfolio 💻</h3>
 
 </div>
 
