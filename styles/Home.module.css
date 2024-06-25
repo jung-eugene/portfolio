@@ -21,6 +21,7 @@
 
 .left_col_top p {
   font-size: 18px;
+  margin-bottom: -3px;
 }
 
 .left_col_top h1 {
@@ -34,7 +35,7 @@
   color: rgb(121, 192, 255);
   letter-spacing: 1px;
   font-style: italic;
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
 .left_col_bottom p {
