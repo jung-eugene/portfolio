@@ -104,6 +104,7 @@
 .description {
   color: #757c84;
   margin-top: 1rem;
+  font-size: 1rem;
 }
 
 .githubButton {
@@ -117,6 +118,7 @@
   transition: background-color 0.3s ease, color 0.3s ease;
   margin-top: 3rem;
   text-align: center;
+  font-size: 1rem;
 }
 
 .githubButton:hover {
@@ -152,4 +154,22 @@
     text-align: center;
     width: 100%;
   }
+}
+
+/* For phones */
+.heading {
+  font-size: 16px;
+}
+.title,
+.commits,
+.button,
+.codeBlock,
+.description,
+.githubButton {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.githubButton {
+  margin-top: 2rem;
 }
