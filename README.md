@@ -1,7 +1,7 @@
 <div align="center">
 <p float="left">
-<img height="200" alt="home" src="https://github.com/jung-eugene/portfolio/assets/114817519/6b660732-53f0-4a3e-ad1b-87b1c2631ef0">
-<img height="200" alt="about" src="https://github.com/jung-eugene/portfolio/assets/114817519/54cf5275-8460-43fb-be14-9d860e70dea5">
+<img height="300" alt="home" src="https://github.com/jung-eugene/portfolio/assets/114817519/6b660732-53f0-4a3e-ad1b-87b1c2631ef0">
+<img height="300" alt="about" src="https://github.com/jung-eugene/portfolio/assets/114817519/54cf5275-8460-43fb-be14-9d860e70dea5">
 </p>
 
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
