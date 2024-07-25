@@ -4,6 +4,19 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
+    title: "finai",
+    codeBlockContent: [
+      "AI-powered personal finance advisor",
+      "Next.js, Typescript and Tailwind CSS",
+      "OpenAI API for customized financial advice",
+      "secure user authentication and management",
+    ],
+    description:
+      "An AI-powered finance advisor app built using Next.js. Allows users to manage their income, expenses, and budget effectively. Provides personalized financial advice based on the user's financial data.",
+    commits: "7 commits",
+    liveProjectLink: "https://github.com/jung-eugene/finai",
+  },
+  {
     title: "apple-website",
     codeBlockContent: [
       "Apple's iPhone 15 Pro website",
@@ -16,19 +29,7 @@ const projects = [
     commits: "27 commits",
     liveProjectLink: "https://3d-iphone15.vercel.app/",
   },
-  {
-    title: "ai-photo",
-    codeBlockContent: [
-      "AI image generation app",
-      "MERN stack",
-      "Cloudinary for image storage",
-      "responsive design with Tailwind CSS",
-    ],
-    description:
-      "An AI Photo Generator that turns text descriptions into images using OpenAI's DALL-E. Utilized the MERN stack for full-stack development, and Cloudinary for cloud-based image storage.",
-    commits: "33 commits",
-    liveProjectLink: "https://github.com/jung-eugene/ai-photo",
-  },
+
   {
     title: "bostonhacks-medimind",
     codeBlockContent: [
