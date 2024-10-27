@@ -6,8 +6,24 @@
   background-color: transparent;
   height: calc(100vh - 110px);
   overflow: auto;
-  scrollbar-width: thin;
-  scrollbar-color: #cf9b31 #1e1e1e;
+}
+
+.container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #cf9b31;
+  border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+  background-color: #ffaa00;
 }
 
 .heading {
