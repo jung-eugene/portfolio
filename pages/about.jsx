@@ -106,7 +106,7 @@ const About = () => {
         >
           <span className={style.ml_2}> /**</span>
           <span style={{ fontWeight: "bold" }}>* about me</span>
-          <span>* a junior studying computer science </span>
+          <span>* a senior studying computer science </span>
           <span>* an aspiring full stack developer </span>
           <span>* currently learning: react.js & next.js </span>
           <span>* passionate in learning new technologies! </span>
