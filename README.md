@@ -44,6 +44,9 @@ Personal Portfolio built using React.js, Next.js, Three.js, and Framer Motion.
 # clone project
 $ git clone https://github.com/jung-eugene/portfolio
 
+# move into project directory
+$ cd portfolio
+
 # install dependencies
 $ npm install
 
