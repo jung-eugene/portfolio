@@ -106,11 +106,10 @@ const About = () => {
         >
           <span className={style.ml_2}> /**</span>
           <span style={{ fontWeight: "bold" }}>* about me</span>
-          <span>* a senior studying computer science </span>
-          <span>* an aspiring full stack developer </span>
-          <span>* currently learning: react.js & next.js </span>
-          <span>* passionate in learning new technologies! </span>
-
+          <span>* CS student @ Boston University '26</span>
+          <span>* software engineer · data analyst</span>
+          <span>* currently: Data Analyst Intern @ National Grid</span>
+          <span>* passionate about using technology to create impact!</span>
           <span className={style.ml_2}>*/</span>
         </motion.div>
       </div>
@@ -135,7 +134,7 @@ const About = () => {
           }}
         >
           <div className={style.right_container}>
-            <h3>MY INTERESTS</h3>
+            <h3>my skillset</h3>
             <div className={style.right_interest}>
               <div className={style.skill}>
                 <div
@@ -185,19 +184,19 @@ const About = () => {
                       }}
                     >
                       <p>
-                        <BsMarkdownFill /> html.md
+                        <BsMarkdownFill /> python.md
                       </p>
                       <p>
-                        <BsMarkdownFill /> css.md
+                        <BsMarkdownFill /> sql.md
                       </p>
                       <p>
                         <BsMarkdownFill /> javascript.md
                       </p>
                       <p>
-                        <BsMarkdownFill /> python.md
+                        <BsMarkdownFill /> java.md
                       </p>
                       <p>
-                        <BsMarkdownFill /> java.md
+                        <BsMarkdownFill /> c.md
                       </p>
                     </motion.div>
                   )}
@@ -254,6 +253,9 @@ const About = () => {
                         <BsMarkdownFill /> react.js.md
                       </p>
                       <p>
+                        <BsMarkdownFill /> next.js.md
+                      </p>
+                      <p>
                         <BsMarkdownFill /> react native.md
                       </p>
                       <p>
@@ -266,7 +268,7 @@ const About = () => {
                   )}
                 </AnimatePresence>
               </div>
-              <div className={style.skill}>
+              {/* <div className={style.skill}>
                 <div
                   onClick={(e) => setShowTool(!showTool)}
                   className={style.dropdownSkill}
@@ -325,7 +327,7 @@ const About = () => {
                     </motion.div>
                   )}
                 </AnimatePresence>
-              </div>
+              </div> */}
               <div className={style.skill}>
                 <div
                   onClick={(e) => setShowLibrary(!showLibrary)}
@@ -335,7 +337,7 @@ const About = () => {
                     {showLibrary ? <FiChevronDown /> : <FiChevronRight />}
                   </span>
                   <span
-                    style={{ color: "rgb(163,190,140)", marginRight: "3px" }}
+                    style={{ color: "rgb(191,97,106)", marginRight: "3px" }}
                   >
                     <BsFolderFill />
                   </span>
@@ -374,10 +376,16 @@ const About = () => {
                       }}
                     >
                       <p>
-                        <BsMarkdownFill /> linux.md
+                        <BsMarkdownFill /> power bi.md
                       </p>
                       <p>
-                        <BsMarkdownFill /> git.md
+                        <BsMarkdownFill /> power apps.md
+                      </p>
+                      <p>
+                        <BsMarkdownFill /> excel.md
+                      </p>
+                      <p>
+                        <BsMarkdownFill /> jira.md
                       </p>
                       <p>
                         <BsMarkdownFill /> github.md
@@ -389,7 +397,7 @@ const About = () => {
                   )}
                 </AnimatePresence>
               </div>
-              <div className={style.skill}>
+              {/* <div className={style.skill}>
                 <div
                   onClick={(e) => setShowFree(!showFree)}
                   className={style.dropdownSkill}
@@ -397,7 +405,9 @@ const About = () => {
                   <span>
                     {showFree ? <FiChevronDown /> : <FiChevronRight />}
                   </span>
-                  <span style={{ color: "whitesmoke", marginRight: "3px" }}>
+                  <span
+                    style={{ color: "rgb(163,190,140)", marginRight: "3px" }}
+                  >
                     <BsFolderFill />
                   </span>
                   <span> free time </span>
@@ -446,7 +456,7 @@ const About = () => {
                     </motion.div>
                   )}
                 </AnimatePresence>
-              </div>
+              </div> */}
             </div>
           </div>
         </motion.div>
