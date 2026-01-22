@@ -17,6 +17,19 @@ const projects = [
     liveProjectLink: "https://github.com/jung-eugene/finai",
   },
   {
+    title: "studyBUddy",
+    codeBlockContent: [
+      "BU-only study partner matching app",
+      "Kotlin + Jetpack Compose (MVVM, StateFlow)",
+      "Firebase Auth + Firestore backend",
+      "Google Calendar API to schedule study sessions",
+    ],
+    description:
+      "An Android app that helps Boston University students find compatible study partners based on courses, availability, and study preferences. Users swipe through curated profiles, match with peers, and schedule study sessions.",
+    commits: "89 commits",
+    liveProjectLink: "https://github.com/jung-eugene/studyBUddy",
+  },
+  {
     title: "apple-website",
     codeBlockContent: [
       "Apple's iPhone 15 Pro website",
@@ -29,20 +42,6 @@ const projects = [
     commits: "27 commits",
     liveProjectLink: "https://3d-iphone15.vercel.app/",
   },
-
-  {
-    title: "bostonhacks-medimind",
-    codeBlockContent: [
-      "fitness and diet mobile app",
-      "React Native and OpenAI",
-      "health metric monitor",
-      "AI-powered symptom checker",
-    ],
-    description:
-      "A mental health tracking mobile app developed for BostonHacks. Designed for individuals with medical conditions to monitor their health metrics and receive AI diet recommendations.",
-    commits: "72 commits",
-    liveProjectLink: "https://github.com/jung-eugene/bostonhacks-medimind",
-  },
   {
     title: "bu-website",
     codeBlockContent: [
@@ -52,7 +51,7 @@ const projects = [
       "fully responsive",
     ],
     description:
-      "A simple website designed to introduce Boston University, built using HTML, CSS, and Javascript. Includes a contact form and various pages such as About, Programs, and Blog. Fully responsive design.",
+      "A simple website designed to introduce Boston University, built using HTML, CSS, and Javascript. Includes a contact form and various pages such as About, Programs, and Blog.",
     commits: "7 commits",
     liveProjectLink: "https://jung-eugene.github.io/bu-website/",
   },
